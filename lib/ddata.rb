@@ -1,5 +1,5 @@
 require "ddata/version"
-require 'redis/namespace'
+require 'redis'
 
 module Ddata
   # Your code goes here...

@@ -45,7 +45,7 @@ describe Ddata::Hash do
     describe "#clear" do
       it "should clear the data from redis" do
         dhash.clear
-        redis.keys.should == []
+        redis.keys.include?('ddata-hash').should_not == true
       end
     end
   end
